@@ -1,0 +1,110 @@
+:root{
+    --small-padding: 10px;
+    --smallgap: 1em;
+    --gap: 2em;
+    --mainbgcolor:rgb(19, 19, 19);
+    --background-color: #222;
+    --individual-color: #190620;
+    --lettercolor: #fff;
+    --borderius: 10px;
+    --taskcolor: #390b2c;
+    --button-bgcolor: red;
+    --addBTBgcolor: rgb(6, 153, 6);
+    --middle-padding: 20px;
+    --headingbgcolor: rgb(25, 11, 11);
+    --box-shadow: 5px 10px 10px #10070e;
+    --text-shadow: 5px 0px 10px #533fd1; 
+    --logocolor: rgb(70, 70, 221);
+
+}
+html, body{
+    height: 100%;
+    box-sizing: border-box;
+    background-color: var(--mainbgcolor);
+    font-family: sans-serif;
+}
+main{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+    /* padding: var(--small-padding); */
+    /* margin: 0px; */
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--logocolor);
+    padding: var(--small-padding);
+    font: bold 35px sans-serif;
+    text-shadow: var(--text-shadow);
+
+}
+nav #newtask{
+    background-color: var(--addBTBgcolor);
+    padding: var(--small-padding);
+    border: none;
+    border-radius: var(--borderius);
+    color: var(--lettercolor);
+    font: bold 13px sans-serif;
+
+}
+.heading{
+    display: flex;
+    justify-content: space-between;
+    padding: var(--middle-padding);
+    background-color: var(--headingbgcolor);
+    border-radius: var(--borderius);
+    font:  bold 18px sans-serif;
+    box-shadow: var(--box-shadow);
+}
+main .taskboard{
+    /* height: 100%; */
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: var(--middle-padding);
+    background-color: var(--background-color);
+    gap: 2em;
+    border-radius: var(--borderius);
+}
+.taskcolum{
+    padding: var(--small-padding);
+    color: var(--lettercolor);
+    border-radius: var(--borderius);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    /* justify-content: space-between; */
+    gap: var(--smallgap);
+    background-color: var(--individual-color);
+    box-shadow: var(--box-shadow);
+    
+}
+.taskcolum:hover{
+    scale: 1.05;
+
+}
+.task{
+    background-color: var(--taskcolor);
+    border-radius: var(--borderius);
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    cursor: grab;
+    padding: var(--small-padding);
+    box-shadow: 5px 10px 10px #10070e;
+
+}
+.task button{
+    align-self: end;
+    background-color: var(--button-bgcolor);
+    border: none;
+    padding: var(--small-padding);
+    border-radius: var(--borderius);
+    color: var(--lettercolor);
+    font: bold 13px sans-serif;
+    cursor: pointer;
+}

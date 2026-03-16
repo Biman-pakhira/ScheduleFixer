@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Schedule</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <nav>
+            <div class="kanbanboard">Kanban Board</div>
+            <button id="newtask">+ Add Task</button>
+        </nav>
+        <div class="taskboard">
+            <div class="taskcolum">
+                <div class="heading">
+                    <div class="left">To Do</div>
+                    <div class="right">Count</div>
+                </div>
+                <div class="task" draggable="true">
+                    <h2>Task 1</h2>
+                    <p>description for task1</p>
+                    <button>Delete</button>
+                </div>
+            </div>
+            <div class="taskcolum">
+                <div class="heading">
+                    <div class="left">In Process</div>
+                    <div class="right">Count</div>
+                </div>
+            </div>
+            <div class="taskcolum">
+                <div class="heading">
+                    <div class="left">Completed</div>
+                    <div class="right">Count</div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
