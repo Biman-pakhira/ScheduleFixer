@@ -7,7 +7,7 @@ let draggedval = null;
 let input = document.querySelectorAll("input");
 let addbtn = document.querySelector("#addbtn");
 let right = document.querySelector(".right");
-addbtn.addEventListener("click", (e)=>{
+addbtn.addEventListener("click", ()=>{
     // e.preventDefault();
     let div = document.createElement("div");
     div.classList.add("task");
