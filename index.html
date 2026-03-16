@@ -18,11 +18,6 @@
                     <div class="left">To Do</div>
                     <div class="right">Count</div>
                 </div>
-                <div class="task" draggable="true">
-                    <h2>Task 1</h2>
-                    <p>description for task1</p>
-                    <button>Delete</button>
-                </div>
             </div>
             <div class="taskcolum">
                 <div class="heading">
@@ -36,7 +31,18 @@
                     <div class="right">Count</div>
                 </div>
             </div>
-
+        </div>
+        <div id="modalelement">
+            <div class="modal">
+                <div class="addtaskboc">
+                    <input type="text" class="name" id="name" placeholder="Add Task Name...">
+                    <input type="text" class="name" id="details" placeholder="Description">
+                    <div class="addCancelbtn">
+                        <button type="button" id="cancel">Cancel</button>
+                        <button type="submit" id="addbtn">Add</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <script src="script.js"></script>

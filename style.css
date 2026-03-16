@@ -8,13 +8,14 @@
     --lettercolor: #fff;
     --borderius: 10px;
     --taskcolor: #390b2c;
-    --button-bgcolor: red;
+    --button-bgcolor: rgb(136, 11, 11);
     --addBTBgcolor: rgb(6, 153, 6);
     --middle-padding: 20px;
     --headingbgcolor: rgb(25, 11, 11);
     --box-shadow: 5px 10px 10px #10070e;
     --text-shadow: 5px 0px 10px #533fd1; 
     --logocolor: rgb(70, 70, 221);
+    --modalBGColor:rgba(0, 0, 0, 0.55);
 
 }
 html, body{
@@ -48,6 +49,7 @@ nav #newtask{
     border-radius: var(--borderius);
     color: var(--lettercolor);
     font: bold 13px sans-serif;
+    cursor: pointer;
 
 }
 .heading{
@@ -107,4 +109,63 @@ main .taskboard{
     color: var(--lettercolor);
     font: bold 13px sans-serif;
     cursor: pointer;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: var(--modalBGColor);
+    backdrop-filter: blur(10px);
+}
+
+.addtaskboc {
+  margin: 10% auto;
+  padding: 20px;
+  /* border: 1px solid #888; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 30%;
+  width: 30%;
+  gap: var(--gap);
+  background-color: var(--background-color);
+  border-radius: var(--borderius);
+}
+.addCancelbtn{
+    display: flex;
+    gap: var(--smallgap);
+}
+.addtaskboc button{
+    flex: 2;
+    /* align-self: flex-end; */
+    border: none;
+    padding: var(--small-padding);
+    border-radius: var(--borderius);
+    cursor: pointer;
+    color: var(--lettercolor);
+    font: bold 1em sans-serif;
+}
+.modal .name{
+    height: 20px;
+    padding: 10px;
+    border-radius: var(--borderius);
+    border: none;
+}
+.modalelement2 .modal{
+    display: inline;
+}
+#cancel{
+    background-color: var(--button-bgcolor);
+}
+#addbtn{
+    background-color: rgb(71, 101, 26);
+}
+#cancel:hover, #addbtn:hover{
+    scale: 1.1;
 }
