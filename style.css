@@ -81,11 +81,11 @@ main .taskboard{
     gap: var(--smallgap);
     background-color: var(--individual-color);
     box-shadow: var(--box-shadow);
-    
+    transition: all 1s; 
 }
-.taskcolum:hover{
+.taskcolum.hover{
     scale: 1.05;
-
+    background-color: #533fd1;
 }
 .task{
     background-color: var(--taskcolor);
